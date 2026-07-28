@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Mamed — mobil öncelikli, dikey arcade oyunu."
+    />
+    <meta name="theme-color" content="#0b1020" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <title>MAMED</title>
+  </head>
+  <body>
+    <main id="app">
+      <section
+        id="game-shell"
+        aria-label="Oyun ekranı"
+        aria-describedby="game-instructions"
+      >
+        <p id="game-instructions" class="sr-only">
+          Ana menüde ok tuşlarıyla seçenek değiştir, Enter veya Space ile
+          etkinleştir. Açık menü sayfasından Escape ile geri dön.
+        </p>
+        <div
+          id="game-root"
+          role="application"
+          tabindex="0"
+          aria-keyshortcuts="Enter Space ArrowUp ArrowDown ArrowLeft ArrowRight Escape"
+          aria-label="Mamed mobil arcade oyunu"
+        ></div>
+      </section>
+
+      <aside
+        id="orientation-warning"
+        role="status"
+        aria-live="polite"
+        aria-hidden="true"
+        hidden
+      >
+        <div class="orientation-card">
+          <span class="orientation-icon" aria-hidden="true">↻</span>
+          <strong>Telefonu dik tut lan.</strong>
+          <small>Köye yan dönerek gidilmez.</small>
+        </div>
+      </aside>
+    </main>
+
+    <noscript>Bu oyunu çalıştırmak için JavaScript açık olmalı.</noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

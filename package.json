@@ -1,0 +1,26 @@
+{
+  "name": "siktir-git-koyune",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Mobil öncelikli, dikey Phaser arcade oyunu.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build && node scripts/prepare-sites-artifact.mjs",
+    "preview": "vite preview --host 0.0.0.0",
+    "lint": "eslint .",
+    "test": "node --test",
+    "validate": "node scripts/validate-artifact.mjs",
+    "check": "npm run lint && npm run test && npm run build && npm run validate"
+  },
+  "dependencies": {
+    "phaser": "^4.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.4",
+    "vite": "^8.1.5"
+  }
+}
