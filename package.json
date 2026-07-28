@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "vite build && node scripts/prepare-sites-artifact.mjs",
+    "build": "vite build",
     "preview": "vite preview --host 0.0.0.0",
     "lint": "eslint .",
     "test": "node --test",
